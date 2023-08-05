@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\DOT NET Project\\BloggieMVC\\Bloggie.Web\\Bloggie.Web.csproj": {}
+    "E:\\BloggieMVC\\Bloggie.Web\\Bloggie.Web.csproj": {}
   },
   "projects": {
-    "E:\\DOT NET Project\\BloggieMVC\\Bloggie.Web\\Bloggie.Web.csproj": {
+    "E:\\BloggieMVC\\Bloggie.Web\\Bloggie.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\DOT NET Project\\BloggieMVC\\Bloggie.Web\\Bloggie.Web.csproj",
+        "projectUniqueName": "E:\\BloggieMVC\\Bloggie.Web\\Bloggie.Web.csproj",
         "projectName": "Bloggie.Web",
-        "projectPath": "E:\\DOT NET Project\\BloggieMVC\\Bloggie.Web\\Bloggie.Web.csproj",
+        "projectPath": "E:\\BloggieMVC\\Bloggie.Web\\Bloggie.Web.csproj",
         "packagesPath": "C:\\Users\\ysgkp\\.nuget\\packages\\",
-        "outputPath": "E:\\DOT NET Project\\BloggieMVC\\Bloggie.Web\\obj\\",
+        "outputPath": "E:\\BloggieMVC\\Bloggie.Web\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ysgkp\\AppData\\Roaming\\NuGet\\NuGet.Config",
