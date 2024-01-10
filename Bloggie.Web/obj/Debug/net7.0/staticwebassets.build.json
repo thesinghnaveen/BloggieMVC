@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "YgeOXE+PRGZvVFuEF+Jybps1G2RIuqHrhZ4Fns8v1zc=",
+  "Hash": "V0I53afee7glgF0VOZHTdBSMsL3OP1TvoANFc1mnGYA=",
   "Source": "Bloggie.Web",
   "BasePath": "_content/Bloggie.Web",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "E:\\BloggieMVC\\Bloggie.Web\\wwwroot\\images\\profile.jpg",
+      "SourceId": "Bloggie.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\BloggieMVC\\Bloggie.Web\\wwwroot\\",
+      "BasePath": "_content/Bloggie.Web",
+      "RelativePath": "images/profile.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\profile.jpg"
     },
     {
       "Identity": "E:\\BloggieMVC\\Bloggie.Web\\wwwroot\\js\\site.js",

@@ -13,6 +13,7 @@
             </h1>
 
             <form method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                 <div class="mb-3">
                     <label class="form-label">Username</label>
                     <input type="text" id="username" class="form-control" asp-for="Username" required />
@@ -23,6 +24,12 @@
                     <label class="form-label">Password</label>
                     <input type="password" id="password" class="form-control" asp-for="Password" required minlength="6" />
                     <span class="text-danger" asp-validation-for="Password"></span>
+                </div>
+                <div calss="mb-3">
+                    <label asp-for="RememberMe">
+                        <input asp-for="RememberMe" />
+                        @Html.DisplayNameFor(m=>m.RememberMe)
+                    </label>
                 </div>
 
                 <div class="mb-3">

@@ -48,6 +48,14 @@ namespace Bloggie.Web.Controllers
                         return RedirectToAction("Register");
                     }
                 }
+                else
+                {
+                    foreach (var errorMessage in identityResult.Errors)
+                    {
+                        ModelState.AddModelError("", errorMessage.Description);
+                    }
+                    return View(registerViewModel);
+                }
             }
 
             // Show error notification
@@ -76,7 +84,7 @@ namespace Bloggie.Web.Controllers
             }
 
             var signInResult = await signInManager.PasswordSignInAsync(loginViewModel.Username,
-                loginViewModel.Password, false, false);
+                loginViewModel.Password, loginViewModel.RememberMe, false);
 
             if (signInResult != null && signInResult.Succeeded)
             {
@@ -87,6 +95,7 @@ namespace Bloggie.Web.Controllers
 
                 return RedirectToAction("Index", "Home");
             }
+            ModelState.AddModelError(string.Empty, "Username or password is not valid!! Try Again");
 
             // Show errors
             return View();

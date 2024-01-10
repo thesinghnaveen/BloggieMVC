@@ -5,30 +5,37 @@
 }
 
 
-<div class="container col-xxl-8 px-4 py-5">
+<div class="container col-xxl-8 px-4 ">
     <div class="row align-items-center g-5 py-5">
-        <div class="col-12 col-lg-6">
+        <div class="col-12 col-lg-7">
             <h1 class="display-5 fw-bold lh-1 mb-3">
-                Bloggie - The Dev Blog
+                Hi 👋, I'm Naveen Singh
             </h1>
             <p class="lead">
-                Bloggie is the gome to coding blogs covering a vast range of
-                topics like HTML, CSS, Javascript, ASP.NET, C#, Angular etc.
-                Want to read the latest dev articles? Join the bloggie app and
-                get weekly blogs in your email.
+                Welcome to my coding haven! Explore a diverse array of topics such as HTML, CSS,
+                Javascript, ASP.NET, C#, Angular, and more on my personal blog. Stay updated with 
+                the latest developer insights – join my blog app for a weekly delivery of blogs
+                straight to your email. Let's embark on this coding journey together!
             </p>
         </div>
 
-        <div class="col-12 col-lg-6">
-            <img src="https://images.pexels.com/photos/57690/pexels-photo-57690.jpeg?auto=compress&cs=tinysrgb&w=600"
+        <div class="col-12 col-lg-5">
+            <img src="images/Profile.jpg"
                  alt="Bloggie - Dev blogs" 
-                 class="d-block mx-lg-auto img-fluid"  width="300"/>
+                 class="d-block mx-lg-auto img-fluid rounded-circle" width="200"/>
         </div>
     </div>
 </div>
 
+<div class="container mt-5 text-center">
+    <div class="row">
+        <div class="col-12">
+            <h2 class="border-bottom pb-3">Explore the Latest Blog✍️</h2>
+        </div>
+    </div>
+</div>
 
-<div class="container">
+@*<div class="container col-xxl-8 px-4">
     <div class="row justify-content-center">
         <div class="col-6 d-flex">
             @if (Model != null && Model.Tags.Any())
@@ -43,34 +50,47 @@
         </div>
     </div>
 
-</div>
+</div>*@
 
 
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-6">
+        <div class="col-12">
             @if (Model != null && Model.BlogPosts.Any())
             {
                 foreach (var blogPost in Model.BlogPosts)
                 {
                     <div class="mb-5 bg-light box-shadow p-5">
-                        <img src="@blogPost.FeaturedImageUrl" alt="@blogPost.Heading"
-                             class="mb-2 d-block img-fluid" />
-
-                        <h2 class="mb-4">@blogPost.Heading</h2>
-                        <p class="mb-4">
-                            Author: @blogPost.Author
-                            <br />
-                            Published Date: @blogPost.PublishedDate.ToShortDateString()
-                        </p>
-
-                        <p class="mb-4">
+                        <div class="row mb-0">
+                            <div class="col-md-6">
+                                <p>
+                                    <i class="fas fa-user text-primary"></i> &nbsp; Author: @blogPost.Author
+                                </p>
+                            </div>
+                            <div class="col-md-6 text-end">
+                                <p>
+                                    <i class="far fa-calendar-alt text-primary"></i>&nbsp;  Published Date: @blogPost.PublishedDate.ToShortDateString()
+                                </p>
+                            </div>
+                        </div>
+                        <p class="mb-0">
                             @foreach (var tag in blogPost.Tags)
                             {
                                 <span class="badge bg-secondary me-1">@tag.Name</span>
                             }
                         </p>
+                        @*<img src="@blogPost.FeaturedImageUrl" alt="@blogPost.Heading"
+                             class="mb-2 d-block img-fluid" />*@
 
+                        <h2 class="mb-0 font-weight-bold">
+                            <a style="text-decoration: none; color: black;"
+                               asp-area=""
+                               asp-controller="Blogs"
+                               asp-action="Index"
+                               asp-route-urlHandle="@blogPost.UrlHandle">
+                                @blogPost.Heading
+                            </a>
+                        </h2>
                         <p class="mb-4">@blogPost.ShortDescription</p>
 
                         <a class="btn btn-dark"
@@ -78,9 +98,9 @@
                            asp-controller="Blogs"
                            asp-action="Index"
                            asp-route-urlHandle="@blogPost.UrlHandle"
-                           >Read More</a>
+                            style="border-radius:15px"
+                        >Read More</a>
                     </div>
-
                 }
             }
         </div>
