@@ -75,5 +75,15 @@ namespace Bloggie.Web.Repositories
 
             return null;
         }
+        public async Task<IEnumerable<BlogPost>> SearchAsync(string query)
+        {
+            return await bloggieDbContext.BlogPosts
+                .Where(post =>
+                    EF.Functions.Like(post.Heading, $"%{query}%") ||
+                    EF.Functions.Like(post.Content, $"%{query}%") ||
+                    EF.Functions.Like(post.Author, $"%{query}%"))
+                .ToListAsync();
+        }
+
     }
 }

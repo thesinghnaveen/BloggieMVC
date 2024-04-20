@@ -81,6 +81,14 @@ E:\DOT NET Project\BloggieMVC\Bloggie.Web\obj\Debug\net7.0\refint\Bloggie.Web.dl
 E:\DOT NET Project\BloggieMVC\Bloggie.Web\obj\Debug\net7.0\Bloggie.Web.pdb
 E:\DOT NET Project\BloggieMVC\Bloggie.Web\obj\Debug\net7.0\Bloggie.Web.genruntimeconfig.cache
 E:\DOT NET Project\BloggieMVC\Bloggie.Web\obj\Debug\net7.0\ref\Bloggie.Web.dll
+E:\BloggieMVC\Bloggie.Web\obj\Debug\net7.0\Bloggie.Web.csproj.AssemblyReference.cache
+E:\BloggieMVC\Bloggie.Web\obj\Debug\net7.0\Bloggie.Web.GeneratedMSBuildEditorConfig.editorconfig
+E:\BloggieMVC\Bloggie.Web\obj\Debug\net7.0\Bloggie.Web.AssemblyInfoInputs.cache
+E:\BloggieMVC\Bloggie.Web\obj\Debug\net7.0\Bloggie.Web.AssemblyInfo.cs
+E:\BloggieMVC\Bloggie.Web\obj\Debug\net7.0\Bloggie.Web.csproj.CoreCompileInputs.cache
+E:\BloggieMVC\Bloggie.Web\obj\Debug\net7.0\Bloggie.Web.MvcApplicationPartsAssemblyInfo.cache
+E:\BloggieMVC\Bloggie.Web\obj\Debug\net7.0\Bloggie.Web.RazorAssemblyInfo.cache
+E:\BloggieMVC\Bloggie.Web\obj\Debug\net7.0\Bloggie.Web.RazorAssemblyInfo.cs
 E:\BloggieMVC\Bloggie.Web\bin\Debug\net7.0\appsettings.Development.json
 E:\BloggieMVC\Bloggie.Web\bin\Debug\net7.0\appsettings.json
 E:\BloggieMVC\Bloggie.Web\bin\Debug\net7.0\Bloggie.Web.staticwebassets.runtime.json
@@ -140,14 +148,6 @@ E:\BloggieMVC\Bloggie.Web\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System
 E:\BloggieMVC\Bloggie.Web\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 E:\BloggieMVC\Bloggie.Web\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 E:\BloggieMVC\Bloggie.Web\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
-E:\BloggieMVC\Bloggie.Web\obj\Debug\net7.0\Bloggie.Web.csproj.AssemblyReference.cache
-E:\BloggieMVC\Bloggie.Web\obj\Debug\net7.0\Bloggie.Web.GeneratedMSBuildEditorConfig.editorconfig
-E:\BloggieMVC\Bloggie.Web\obj\Debug\net7.0\Bloggie.Web.AssemblyInfoInputs.cache
-E:\BloggieMVC\Bloggie.Web\obj\Debug\net7.0\Bloggie.Web.AssemblyInfo.cs
-E:\BloggieMVC\Bloggie.Web\obj\Debug\net7.0\Bloggie.Web.csproj.CoreCompileInputs.cache
-E:\BloggieMVC\Bloggie.Web\obj\Debug\net7.0\Bloggie.Web.MvcApplicationPartsAssemblyInfo.cache
-E:\BloggieMVC\Bloggie.Web\obj\Debug\net7.0\Bloggie.Web.RazorAssemblyInfo.cache
-E:\BloggieMVC\Bloggie.Web\obj\Debug\net7.0\Bloggie.Web.RazorAssemblyInfo.cs
 E:\BloggieMVC\Bloggie.Web\obj\Debug\net7.0\staticwebassets\msbuild.Bloggie.Web.Microsoft.AspNetCore.StaticWebAssets.props
 E:\BloggieMVC\Bloggie.Web\obj\Debug\net7.0\staticwebassets\msbuild.build.Bloggie.Web.props
 E:\BloggieMVC\Bloggie.Web\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.Bloggie.Web.props

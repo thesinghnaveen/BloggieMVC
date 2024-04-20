@@ -6,7 +6,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Bloggie.Web</title>
+    <title>@ViewData["Title"] - Naveen Singh - Developer's Blog</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Bloggie.Web.styles.css" asp-append-version="true" />
@@ -17,7 +17,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark border-bottom box-shadow">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark border-bottom box-shadow fixed-top ">
             <div class="container">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Naveen Singh</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -26,9 +26,17 @@
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
-                       @* <li class="nav-item">
+                        <li class="nav-item">
                             <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>*@
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-light" asp-area="" asp-controller="Contact" asp-action="Index">Contact Us</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-light" asp-area="" asp-controller="About" asp-action="Index">About</a>
+                        </li>
 
 
                         @if (signInManager.IsSignedIn(User) && User.IsInRole("Admin"))
@@ -87,7 +95,15 @@
                                 </ul>
                             </li>
                         }
-
+                        <!-- Add Search Box -->
+                        <li class="nav-item ms-auto pe-3">
+                            <form class="form-inline" method="get" asp-controller="Search" asp-action="Search">
+                                <div class="input-group">
+                                    <input class="form-control" type="search" placeholder="Search" aria-label="Search" name="query">
+                                    <button class="btn btn-outline-light" type="submit">Search</button>
+                                </div>
+                            </form>
+                        </li>
                     </ul>
 
                     <div class="d-flex align-items-center">
@@ -124,14 +140,14 @@
         </nav>
     </header>
     <div>
-        <main role="main" class="pb-3">
+        <main role="main" class="pt-5">
             @RenderBody()
         </main>
     </div>
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2023 - Bloggie.Web - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2023 - Naveen Singh - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
