@@ -79,10 +79,16 @@ namespace Bloggie.Web.Repositories
         {
             return await bloggieDbContext.BlogPosts
                 .Where(post =>
+                    post.Tags.Any(tag => tag.Name.Contains(query)) ||
                     EF.Functions.Like(post.Heading, $"%{query}%") ||
                     EF.Functions.Like(post.Content, $"%{query}%") ||
                     EF.Functions.Like(post.Author, $"%{query}%"))
                 .ToListAsync();
+        }
+        public IEnumerable<BlogPost> GetPostsByTagName(string tagName)
+        {
+            // Implement logic to retrieve posts by tag name from the database
+            return bloggieDbContext.BlogPosts.Where(post => post.Tags.Any(tag => tag.Name == tagName)).ToList();
         }
 
     }

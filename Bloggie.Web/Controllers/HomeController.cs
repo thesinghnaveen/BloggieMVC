@@ -38,8 +38,22 @@ namespace Bloggie.Web.Controllers
 
             return View(model);
         }
+        public IActionResult PostsForTag(string tagName)
+        {
+            var tagPosts = blogPostRepository.GetPostsByTagName(tagName);
+            return View("TagPosts", tagPosts);
+        }
+
 
         public IActionResult Privacy()
+        {
+            return View();
+        }
+        public IActionResult ContactUs()
+        {
+            return View();
+        }
+        public IActionResult About()
         {
             return View();
         }

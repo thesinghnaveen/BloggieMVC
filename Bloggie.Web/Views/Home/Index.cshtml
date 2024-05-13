@@ -9,8 +9,9 @@
     <div class="row align-items-center g-5 py-5">
         <div class="col-12 col-lg-7">
             <h1 class="display-5 fw-bold lh-1 mb-3">
-                Hi 👋, I'm Naveen Singh
+                Hi 👋, I'm <span class="animate-text font-black text-gradient">Naveen Singh</span>
             </h1>
+
             <p class="lead">
                 Welcome to my coding haven! Explore a diverse array of topics such as HTML, CSS,
                 Javascript, ASP.NET, C#, Angular, and more on my personal blog. Stay updated with 
@@ -35,22 +36,22 @@
     </div>
 </div>
 
-@*<div class="container col-xxl-8 px-4">
+<<div class="container col-xxl-8 px-4">
     <div class="row justify-content-center">
         <div class="col-6 d-flex">
             @if (Model != null && Model.Tags.Any())
             {
                 foreach (var tag in Model.Tags)
                 {
-                    <span class="badge bg-dark me-1">
+                    <a href="@Url.Action("PostsForTag", "Home", new { tagName = tag.Name })" class="badge bg-dark me-1" style="text-decoration: none;">
                         @tag.Name
-                    </span>
+                    </a>
                 }
             }
         </div>
     </div>
+</div>
 
-</div>*@
 
 
 <div class="container">
