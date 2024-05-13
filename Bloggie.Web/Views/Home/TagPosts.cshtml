@@ -1,0 +1,64 @@
+﻿@model IEnumerable<Bloggie.Web.Models.Domain.BlogPost>
+
+<div class="container mt-5 text-center">
+    <div class="row">
+        <div class="col-12">
+            <h2 class="border-bottom pb-3">Blogs Related to-</h2>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-12">
+            <div class="col-10">
+                @if (Model != null && Model.Any())
+                {
+                    foreach (var blogPost in Model)
+                    {
+                        <div class="mb-5 bg-light box-shadow p-5">
+                            <div class="row mb-0">
+                                <div class="col-md-6">
+                                    <p>
+                                        <i class="fas fa-user text-primary"></i> &nbsp; Author: @blogPost.Author
+                                    </p>
+                                </div>
+                                <div class="col-md-6 text-end">
+                                    <p>
+                                        <i class="far fa-calendar-alt text-primary"></i>&nbsp;  Published Date: @blogPost.PublishedDate.ToShortDateString()
+                                    </p>
+                                </div>
+                            </div>
+                            @if (blogPost.Tags != null)
+                            {
+                                <p class="mb-0">
+                                    @foreach (var tag in blogPost.Tags)
+                                    {
+                                        <span class="badge bg-secondary me-1">@tag.Name</span>
+                                    }
+                                </p>
+                            }
+                            <h2 class="mb-0 font-weight-bold">
+                                <a style="text-decoration: none; color: black;"
+                                   asp-area=""
+                                   asp-controller="Blogs"
+                                   asp-action="Index"
+                                   asp-route-urlHandle="@blogPost.UrlHandle">
+                                    @blogPost.Heading
+                                </a>
+                            </h2>
+                            <p class="mb-4">@blogPost.ShortDescription</p>
+                            <a class="btn btn-dark"
+                               asp-area=""
+                               asp-controller="Blogs"
+                               asp-action="Index"
+                               asp-route-urlHandle="@blogPost.UrlHandle"
+                               style="border-radius:15px">
+                                Read More
+                            </a>
+                        </div>
+                    }
+                }
+            </div>
+        </div>
+    </div>
+</div>
